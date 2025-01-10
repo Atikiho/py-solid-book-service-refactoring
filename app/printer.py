@@ -1,8 +1,10 @@
 from abc import ABC, abstractmethod
 
+from app.book import Book
+
 
 class Printer(ABC):
-    def __init__(self, book):
+    def __init__(self, book: Book) -> None:
         self.book = book
 
     @abstractmethod

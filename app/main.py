@@ -1,12 +1,7 @@
+from app.book import Book
 from app.displayer import ConsoleDisplayer, ReverseDisplayer
 from app.printer import ConsolePrinter, ReversePrinter
 from app.serializer import XmlSerializer, JsonSerializer
-
-
-class Book:
-    def __init__(self, title: str, content: str):
-        self.title = title
-        self.content = content
 
 
 def main(book: Book, commands: list[tuple[str, str]]) -> None | str:
